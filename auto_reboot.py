@@ -2,6 +2,7 @@ import http
 import requests
 import time
 import json
+import datetime
 
 
 with open("params.json", "r") as f:
@@ -79,7 +80,7 @@ def reboot_if_box_not_connected():
         if rbt is None:
             pass
         else:
-            print(str(time.now()) + " Rebooted")
+            print(str(datetime.datetime.now()) + " Rebooted")
             pass
 
 
